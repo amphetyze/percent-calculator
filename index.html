@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="калькулятор процентов, расчет процентов, онлайн калькулятор, процентная ставка, финансовый калькулятор, калькулятор, рассчитать проценты">
+    <meta name="description"
+        content="Онлайн калькулятор процентов поможет вам быстро и удобно рассчитать процентную ставку для различных финансовых операций. Простой и функциональный инструмент для расчета процентов.">
+    <meta name="subject" content="Калькулятор процентов">
+    <meta name="language" content="RU">
+    <meta name="author" content="amphetyze">
+    <meta name="copyright" content="© 2024. Все права защищены, amphetyze">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Калькулятор процентов - быстрый и удобный расчет процентной ставки">
+    <meta property="og:description"
+        content="Используйте онлайн калькулятор процентов для быстрого и точного расчета процентной ставки. Удобный инструмент для финансовых расчетов.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Калькулятор процентов - быстрый и удобный расчет процентной ставки">
+    <meta name="twitter:description"
+        content="Используйте онлайн калькулятор процентов для быстрого и точного расчета процентной ставки. Удобный инструмент для финансовых расчетов.">
+    <link rel="favicon" href="favicon.ico" type="image/x-icon">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>
+        Онлайн калькулятор процентов
+    </title>
+</head>
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <div class="main__container">
+                <section class="section">
+                    <h1 class="section__title">
+                        Калькулятор процентов
+                    </h1>
+                    <div class="section__layout">
+                        <div class="section__row">
+                            <form class="section__form form">
+                                <span class="form__text">Сколько составляет</span>
+                                <label for="input1-number1" class="visually-hidden">Введите первое число</label>
+                                <input type="text" class="form__input form__input--narrow" id="input1-number1">
+                                <span class="form__text">% от числа</span>
+                                <label for="input1-number2" class="visually-hidden">Введите второе число</label>
+                                <input type="text" class="form__input form__input--wide" id="input1-number2">
+                                <div class="form__actions">
+                                    <button type="button" class="form__button button" id="calc-btn-1">OK</button>
+                                    <button type="reset" class="form__button button" id="reset-btn-1">Сброс</button>
+                                </div>
+                            </form>
+                            <p class="section__result" id="result-1">
+                                0% от числа 0 = 0
+                            </p>
+                        </div>
+                        <div class="section__row">
+                            <form class="section__form form">
+                                <span class="form__text">Сколько % составляет число</span>
+                                <label for="input2-number1" class="visually-hidden">Введите первое число</label>
+                                <input type="text" class="form__input form__input--narrow" id="input2-number1">
+                                <span class="form__text">от числа</span>
+                                <label for="input2-number2" class="visually-hidden">Введите второе число</label>
+                                <input type="text" class="form__input form__input--wide" id="input2-number2">
+                                <div class="form__actions">
+                                    <button type="button" class="form__button button" id="calc-btn-2">OK</button>
+                                    <button type="reset" class="form__button button" id="reset-btn-2">Сброс</button>
+                                </div>
+                            </form>
+                            <p class="section__result" id="result-2">
+                                Число 0 от числа 0 = 0%
+                            </p>
+                        </div>
+                        <div class="section__row">
+                            <form class="section__form form">
+                                <span class="form__text">Прибавить</span>
+                                <label for="input3-number1" class="visually-hidden">Введите первое число</label>
+                                <input type="text" class="form__input form__input--narrow" id="input3-number1">
+                                <span class="form__text">% к числу</span>
+                                <label for="input3-number2" class="visually-hidden">Введите второе число</label>
+                                <input type="text" class="form__input form__input--wide" id="input3-number2">
+                                <div class="form__actions">
+                                    <button type="button" class="form__button button" id="calc-btn-3">OK</button>
+                                    <button type="reset" class="form__button button" id="reset-btn-3">Сброс</button>
+                                </div>
+                            </form>
+                            <p class="section__result" id="result-3">
+                                Прибавить 0% к числу 0 = 0
+                            </p>
+                        </div>
+                        <div class="section__row">
+                            <form class="section__form form">
+                                <span class="form__text">Вычесть</span>
+                                <label for="input4-number1" class="visually-hidden">Введите первое число</label>
+                                <input type="text" class="form__input form__input--narrow" id="input4-number1">
+                                <span class="form__text">% из числа</span>
+                                <label for="input4-number2" class="visually-hidden">Введите второе число</label>
+                                <input type="text" class="form__input form__input--wide" id="input4-number2">
+                                <div class="form__actions">
+                                    <button type="button" class="form__button button" id="calc-btn-4">OK</button>
+                                    <button type="reset" class="form__button button" id="reset-btn-4">Сброс</button>
+                                </div>
+                            </form>
+                            <p class="section__result" id="result-4">
+                                Вычесть 0% из числа 0 = 0
+                            </p>
+                        </div>
+                        <div class="section__row section__row--last">
+                            <form class="section__form form">
+                                <span class="form__text">Округлять до</span>
+                                <label for="decimal-places-list" class="visually-hidden">Количество знаков после
+                                    запятой</label>
+                                <select id="decimal-places-list" class="form__select select">
+                                    <option value="1" class="select__option">1</option>
+                                    <option value="2" class="select__option" selected>2</option>
+                                    <option value="3" class="select__option">3</option>
+                                    <option value="4" class="select__option">4</option>
+                                    <option value="5" class="select__option">5</option>
+                                    <option value="6" class="select__option">6</option>
+                                    <option value="7" class="select__option">7</option>
+                                    <option value="8" class="select__option">8</option>
+                                    <option value="9" class="select__option">9</option>
+                                    <option value="10" class="select__option">10</option>
+                                </select>
+                                <span class="form__text">знаков после запятой</span>
+                            </form>
+                            <button class="section__button button" id="reset-all-btn">Сбросить все</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
